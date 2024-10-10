@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kaitlyn Lam Portal Page</title>
   </head>
-  <body>
-    <h1>Kaitlyn Lam</h1>
-    <h2>DES 157A - Interactive Media II - Fall 2024</h2>
 
-    <div class="container">
-      <div class="column">
-        <h2>Studios</h2>
-        <ul>
-          <li><a href="#">Learning Journal</a></li>
-          <li><a href="#">Mad Libs 2.0</a></li>
-          <li><a href="#">Every Picture</a></li>
-          <li><a href="#">Game On!</a></li>
-        </ul>
-        <h2>Experiments</h2>
-        <ul>
-          <li><a href="exp/exp1.html">Exp 1</a></li>
-        </ul>
+  <body>
+    <header>
+      <div id="banner">
+        <div class="headings">
+          <h1>kaitlyn lam</h1>
+          <h2>DES 157A - Interactive Media II - Fall 2024</h2>
+        </div>
+        <div class="bannerimages">
+          <img
+            id="lastname"
+            src="images/lin.png"
+            alt="lastname"
+            style="width: 130px; height: auto"
+          />
+          <img
+            id="definition"
+            src="images/lindef.png"
+            alt="definition"
+            style="width: 300px; height: auto"
+          />
+        </div>
       </div>
-      <div class="column">
-        <h2>Research & Development</h2>
-        <ul>
-          <li><a href="#">Project Brief</a></li>
-          <li><a href="#">Design Comp</a></li>
-          <li><a href="#">Version 1</a></li>
-          <li><a href="#">Version 2 (User Test)</a></li>
-          <li><a href="#">User Test Results</a></li>
-        </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="column">
+          <img
+            id="cursor"
+            src="images/cursorsticker.png"
+            alt="cursor"
+            style="width: auto; height: 100px"
+          />
+          <div class="box">
+            <h2>Studios</h2>
+            <ul>
+              <li><a href="#">Learning Journal</a></li>
+              <li><a href="#">Mad Libs 2.0</a></li>
+              <li><a href="#">Every Picture</a></li>
+              <li><a href="#">Game On!</a></li>
+            </ul>
+            <h2>Experiments</h2>
+            <ul>
+              <li><a href="exp/exp1.html">Exp 1</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <img
+            id="lightbulb"
+            src="images/lightbulb.png"
+            alt="lightbulb"
+            style="width: auto; height: 100px"
+          />
+          <div class="box">
+            <h2>Research & Development</h2>
+            <ul>
+              <li><a href="#">Project Brief</a></li>
+              <li><a href="#">Design Comp</a></li>
+              <li><a href="#">Version 1</a></li>
+              <li><a href="#">Version 2 (User Test)</a></li>
+              <li><a href="#">User Test Results</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <img
+            id="pen"
+            src="images/pen.png"
+            alt="pen tool"
+            style="width: auto; height: 100px"
+          />
+          <div class="box">
+            <h2>Final</h2>
+            <ul>
+              <li><a href="#">Final Project</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <h2>Final</h2>
-        <ul>
-          <li><a href="#">Final Project</a></li>
-        </ul>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <h3>kaitlyn lam</h3>
+      <a
+        href="mailto:&#107;&#121;&#108;&#097;&#109;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;"
+        >kylam@ucdavis.edu</a
+      >
+    </footer>
   </body>
 </html>
