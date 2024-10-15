@@ -10,10 +10,12 @@
     <p id="message">Color choice:</p>
     <script>
       // choose a color from a given list, and it will change the color of the header. Colors not chosen from the list will tell the user that it does not exist in the list.
-      function changeColor() {
-        var userColor = prompt(
-          "Enter a color from this list (red, blue, green, yellow, purple)"
-        );
+      function getColor() {
+            var userColor = prompt("Enter a color from this list (red, blue, green, yellow, purple)");
+            return userColor;
+        }
+      
+      function changeColor(userColor) {
 
         var colors = ["red", "green", "blue", "yellow", "purple"];
 
@@ -31,7 +33,8 @@
           }
         }
       }
-      changeColor();
+      var userColor = getColor();
+        changeColor(userColor);
     </script>
   </body>
 </html>
