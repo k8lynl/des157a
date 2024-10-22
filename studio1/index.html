@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadLibs</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../images/letter.png"
+        alt="letter"
+        style="width: 330px; height: auto"
+      />
+      <h1>SECRET ADMIRER</h1>
+      <h2>What a heart-filled letter!</h2>
+    </header>
+    <main>
+      <form>
+        <section>
+          <label for="adj1">Adjective</label>
+          <input type="text" id="adj1" required />
+          <label for="adj2">Adjective</label>
+          <input type="text" id="adj2" required />
+          <label for="adj3">Adjective</label>
+          <input type="text" id="adj3" required />
+          <label for="adj4">Adjective</label>
+          <input type="text" id="adj4" required />
+          <label for="adj5">Adjective</label>
+          <input type="text" id="adj5" required />
+          <label for="adj6">Adjective</label>
+          <input type="text" id="adj6" required />
+        </section>
+
+        <section>
+          <label for="name1">Name</label>
+          <input type="text" id="name1" required />
+          <label for="name2">Name</label>
+          <input type="text" id="name2" required />
+        </section>
+
+        <section>
+          <label for="number">Number</label>
+          <input type="text" id="number" required />
+          <label for="time-measurement">Time measurement</label>
+          <input type="text" id="time-measurement" required />
+          <label for="time">Time</label>
+          <input type="text" id="time" required />
+        </section>
+
+        <section>
+          <label for="location1">Location</label>
+          <input type="text" id="location1" required />
+          <label for="location2">Location</label>
+          <input type="text" id="location2" required />
+          <label for="location3">Location</label>
+          <input type="text" id="location3" required />
+        </section>
+
+        <section>
+          <label for="bodypart1">Body Part</label>
+          <input type="text" id="bodypart1" required />
+        </section>
+
+        <section>
+          <label for="verb1">Verb</label>
+          <input type="text" id="verb1" required />
+          <label for="verb-s">Verb ending with -s</label>
+          <input type="text" id="verb-s" required />
+        </section>
+
+        <section>
+          <label for="noun">Noun</label>
+          <input type="text" id="noun" required />
+          <label for="food">Food</label>
+          <input type="text" id="food" required />
+        </section>
+
+        <section>
+          <label for="adv">Adverb</label>
+          <input type="text" id="adv" required />
+        </section>
+
+        <input type="SUBMIT" value="SUBMIT" />
+      </form>
+    </main>
+
+    <section id="overlay" class="hidden">
+      <article>
+        <h2>Overlay content here</h2>
+        <button class="close">close</button>
+      </article>
+    </section>
+  </body>
+</html>
