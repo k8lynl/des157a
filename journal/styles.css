@@ -51,7 +51,7 @@ p {
   color: #0a2540;
   padding-top: 10px;
   line-height: 21pt;
-  max-width: 600px;
+  width:auto;
 }
 
 #banner {
@@ -98,7 +98,7 @@ p {
 }
 
 .column {
-  width: 675px;
+  width: 70%;
   margin: 25px 0;
 }
 
