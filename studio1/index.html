@@ -20,12 +20,25 @@
   <body>
     <header>
       <img
+        id="letter"
         src="../images/letter.png"
         alt="letter"
         style="width: 330px; height: auto"
       />
-      <h1>SECRET ADMIRER</h1>
+      <h1>SECRET ADMIRER<span class="flicker">|</span></h1>
       <h2>What a heart-filled letter!</h2>
+      <img
+        id="letter1"
+        src="../images/openletter1.png"
+        alt="openletter1"
+        style="width: 280px; height: auto"
+      />
+      <img
+        id="letter2"
+        src="../images/openletter2.png"
+        alt="openletter2"
+        style="width: 280px; height: auto"
+      />
     </header>
     <main>
       <form>
@@ -38,10 +51,6 @@
           <input type="text" id="adj3" required />
           <label for="adj4">Adjective</label>
           <input type="text" id="adj4" required />
-          <label for="adj5">Adjective</label>
-          <input type="text" id="adj5" required />
-          <label for="adj6">Adjective</label>
-          <input type="text" id="adj6" required />
         </section>
 
         <section>
@@ -56,8 +65,6 @@
           <input type="text" id="number" required />
           <label for="time-measurement">Time measurement</label>
           <input type="text" id="time-measurement" required />
-          <label for="time">Time</label>
-          <input type="text" id="time" required />
         </section>
 
         <section>
@@ -65,8 +72,6 @@
           <input type="text" id="location1" required />
           <label for="location2">Location</label>
           <input type="text" id="location2" required />
-          <label for="location3">Location</label>
-          <input type="text" id="location3" required />
         </section>
 
         <section>
@@ -77,12 +82,12 @@
         <section>
           <label for="verb1">Verb</label>
           <input type="text" id="verb1" required />
-          <label for="verb-s">Verb ending with -s</label>
-          <input type="text" id="verb-s" required />
+          <label for="verb2">Verb</label>
+          <input type="text" id="verb2" required />
         </section>
 
         <section>
-          <label for="noun">Noun</label>
+          <label for="noun">Noun ending with "-s"</label>
           <input type="text" id="noun" required />
           <label for="food">Food</label>
           <input type="text" id="food" required />
@@ -99,8 +104,8 @@
 
     <section id="overlay" class="hidden">
       <article>
-        <h2>Overlay content here</h2>
-        <button class="close">close</button>
+        <p>Overlay content here</p>
+        <button class="close">Play again</button>
       </article>
     </section>
   </body>
