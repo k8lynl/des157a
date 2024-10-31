@@ -162,8 +162,8 @@ p {
   display: block;
   margin-top: 200px;
   margin-left: 280px;
-  transform: rotate(10deg); 
-  transition: transform 0.5s ease; 
+  transform: rotate(10deg);
+  transition: transform 0.5s ease;
 }
 
 #letter1:hover {
