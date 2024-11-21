@@ -31,19 +31,6 @@ h3 {
   color: #0a2540;
 }
 
-article h3 {
-  font-weight: 400;
-  font-size: 12pt;
-  font-family: "inter tight";
-  color: #0a2540;
-}
-
-time {
-  font-family: "ibm plex mono";
-  color: #0a2540;
-  font-size: 12pt;
-}
-
 p {
   font-family: "inter tight";
   font-weight: 400;
@@ -156,31 +143,4 @@ footer {
   text-align: center;
   padding: 40px 0 80px;
   font-family: "inter tight";
-}
-
-figure {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-figure img {
-  display: block;
-  padding: 8px;
-  border-radius: 15px;
-}
-
-figcaption {
-  font-weight: 600;
-  font-family: "inter tight";
-  color: #0a2540;
-  font-style: italic;
-  padding: 8px;
-  text-align: center;
-  display: block;
-}
-
-.visualimages {
-  padding-top: 48px;
 }
