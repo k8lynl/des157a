@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game On!</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span style="color: #6de9ff;">GAME</span> 
+        <span style="color: #FF5B50;">ON!</span>
+        <span style="color: #fff;">(for Nintendo Switch)</span>
+      </h1>      
+    </header>
+    <main>
+      <div id="player1">
+        <h2>Player 1</h2>
+        <h3>Score:</h3>
+        <p id="score1">0</p>
+        <img src="images/player1.png" alt="player1" width="150px" />
+        <!-- buttons -->
+        <div id="roll-again-area1" class="buttons"></div>
+        <div id="pass-area1" class="buttons"></div>
+      </div>
+      <div id="screen">
+        <div id="gamecontrol">
+          <h2>Start a Game</h2>
+          <button id="startgame">
+            Randomly Pick the First Player, and Start the Game
+          </button>
+        </div>
+        <div id="game"></div>
+        <div id="actions"></div>
+      </div>
+      <div id="player2">
+        <h2>Player 2</h2>
+        <h3>Score:</h3>
+        <p id="score2">0</p>
+        <img src="images/player2.png" alt="player2" width="150px" />
+        <!-- buttons -->
+        <div id="roll-again-area2" class="buttons"></div>
+        <div id="pass-area2" class="buttons"></div>
+      </div>
+    </main>
+    <div id="instructions">
+      <h2>Controls</h2>
+      <h3>Press A to roll the dice</h3>
+      <h3>Press B to pass a turn</h3>
+    </div>
+    <audio id="roll-sound" preload="auto">
+      <source src="sounds/Roll.mp3" type="audio/mp3">
+    </audio>
+    <audio id="end-sound" preload="auto">
+      <source src="sounds/End.mp3" type="audio/mp3">
+    </audio>
+    <audio id="pass-sound" preload="auto">
+      <source src="sounds/B.mp3" type="audio/mp3">
+    </audio>
+    </audio>
+  </body>
+</html>

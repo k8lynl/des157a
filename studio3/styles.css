@@ -1,0 +1,184 @@
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  font-family: "Jersey 20", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  background-image: url(images/game-on-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+}
+
+img {
+  width: 150px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  gap: 20px;
+}
+
+#player1,
+#player2 {
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(237, 237, 237, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+  color: #333;
+}
+
+#screen {
+  text-align: center;
+  flex-grow: 1;
+  background-color: #333;
+  height: 375px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 15px solid #1e1e1e;
+}
+
+#instructions {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: -200px;
+  background-color: rgba(237, 237, 237, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 45.5%;
+  padding-top: 10px;
+  padding-bottom: 46px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+#score1,
+#score2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Buttons within the images */
+.buttons {
+  position: absolute;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  cursor: pointer;
+  border-radius: 16px;
+  color: white;
+  height: 14px;
+  font-size: 12px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Player 1 */
+#roll-again-area1 {
+  top: 61%;
+  left: 62.75%;
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+#pass-area1 {
+  top: 66%;
+  left: 51.75%;
+  background-color: rgba(255, 123, 0, 0.7);
+}
+
+/* Player 2 */
+#roll-again-area2 {
+  top: 41%;
+  left: 59.75%;
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+#pass-area2 {
+  top: 46%;
+  left: 48.75%;
+  background-color: rgba(255, 123, 0, 0.7);
+}
+
+/* Hover effects */
+#roll-again-area1:hover,
+#pass-area1:hover,
+#roll-again-area2:hover,
+#pass-area2:hover {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+#pass-area1:hover,
+#pass-area2:hover {
+  background-color: rgba(255, 123, 0, 1);
+}
+
+#roll-again-area1,
+#pass-area1,
+#roll-again-area2,
+#pass-area2 {
+  display: none;
+}
+
+#player1:hover #roll-again-area1,
+#player1:hover #pass-area1 {
+  display: block;
+}
+
+#player2:hover #roll-again-area2,
+#player2:hover #pass-area2 {
+  display: block;
+}
+
+#player1 img,
+#player2 img {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  width: 150px;
+}
+
+#player2 img.transparent {
+  opacity: 0.3;
+}
+
+#player1 img.transparent {
+  opacity: 0.3;
+}
