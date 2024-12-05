@@ -3,7 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MadLibs</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesfinal.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img
+        id="letter"
+        src="../images/letter.png"
+        alt="letter"
+        style="width: 330px; height: auto"
+      />
+      <h1>SECRET ADMIRER<span class="flicker">|</span></h1>
+      <h2>What a heart-filled letter!</h2>
+    </header>
+    <main>
+      <form>
+        <!-- Page 0: Customization (Color and Font) -->
+<section class="page" id="customization-page">
+  <h3>Customize Your Mad Lib</h3>
+  
+  <!-- Color Selection for Background -->
+  <label for="color-select">Select Overlay Background Color:</label>
+  <input type="color" id="color-select" value="#ff6347" />
+  
+  <!-- Font Color Selection -->
+  <label for="font-color-select">Select Font Color:</label>
+  <input type="color" id="font-color-select" value="#332e74" />
+
+  <!-- Font Selection -->
+  <label for="font-select">Select Font Style:</label>
+  <select id="font-select">
+    <option value="IBM Plex Mono">IBM Plex Mono</option>
+    <option value="Josefin Sans">Josefin Sans</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Helvetica">Helvetica</option>
+  </select>
+
+  <button type="button" class="autofill-btn">Autofill Inputs</button>
+
+  <div class="navigation-buttons">
+    <button type="button" class="next-btn">Next</button>
+  </div>
+</section>
+
+
+        <!-- Page 1: Adjectives -->
+        <section class="page" id="adjectives-page">
+          <h3>Adjectives</h3>
+          <label for="adj1">Adjective</label>
+          <input type="text" id="adj1" required />
+          <label for="adj2">Adjective</label>
+          <input type="text" id="adj2" required />
+          <label for="adj3">Adjective</label>
+          <input type="text" id="adj3" required />
+          <label for="adj4">Adjective</label>
+          <input type="text" id="adj4" required />
+          <label for="adv">Adverb</label>
+          <input type="text" id="adv" required />
+
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <div class="navigation-buttons">
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
+
+        <!-- Page 2: Names -->
+        <section class="page" id="names-page" style="display:none;">
+          <h3>Names</h3>
+          <label for="name1">Name</label>
+          <input type="text" id="name1" required />
+          <label for="name2">Name</label>
+          <input type="text" id="name2" required />
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <div class="navigation-buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
+
+        <!-- Page 3: Numbers and Time -->
+        <section class="page" id="numbers-time-page" style="display:none;">
+          <h3>Numbers and Time</h3>
+          <label for="number">Number</label>
+          <input type="text" id="number" required />
+          <label for="time-measurement">Time measurement</label>
+          <input type="text" id="time-measurement" required />
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <div class="navigation-buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
+
+        <!-- Page 4: Locations -->
+        <section class="page" id="locations-page" style="display:none;">
+          <h3>Locations</h3>
+          <label for="location1">Location</label>
+          <input type="text" id="location1" required />
+          <label for="location2">Location</label>
+          <input type="text" id="location2" required />
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <div class="navigation-buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
+
+        <!-- Page 6: Verbs -->
+        <section class="page" id="verbs-page" style="display:none;">
+          <h3>Verbs</h3>
+          <label for="verb1">Verb</label>
+          <input type="text" id="verb1" required />
+          <label for="verb2">Verb</label>
+          <input type="text" id="verb2" required />
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+
+          <div class="navigation-buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
+
+        <!-- Page 7: Nouns -->
+        <section class="page" id="noun-food-page" style="display:none;">
+          <h3>Nouns</h3>
+          <label for="noun">Noun ending with "-s"</label>
+          <input type="text" id="noun" required />
+          <label for="food">Food</label>
+          <input type="text" id="food" required />
+          <label for="bodypart1">Body Part</label>
+          <input type="text" id="bodypart1" required />
+
+          <button type="button" class="autofill-btn">Autofill Inputs</button>
+
+
+          <div class="navigation-buttons">
+          <div class="navigation-buttons">
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="submit" class="next-btn">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <section id="overlay" class="hidden">
+      <article>
+        <p>Overlay content here</p>
+        <button class="close">Play again</button>
+      </article>
+    </section>
+  </body>
 </html>

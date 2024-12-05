@@ -1,0 +1,214 @@
+body {
+    font-family: "IBM Plex Mono", monospace;
+    margin: 5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf2e7;
+    font-size: 10pt;
+    transition: background-color 0.5s ease;
+  }
+  
+  header {
+    flex: 1;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+  }
+  
+  #letter {
+    box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 45px -30px rgba(93, 61, 50, 0.25);
+  }
+  
+  form {
+    width: 600px;
+    padding: 32px;
+    background-color: white;
+    box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 45px -30px rgba(93, 61, 50, 0.25);
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    color: #332e74;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 16px 24px;
+    background-color: #f06060;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "josefin sans";
+    font-weight: 900;
+    font-size: 16pt;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #973e3e;
+  }
+  
+  input[type="text"]:focus {
+    background-color: #ebebeb;
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 80pt;
+    color: #f06060;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #332e74;
+    font-size: 24pt;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  
+  .showing {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .page {
+    display: none;
+  }
+  
+  #overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Default color */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-property: opacity, visibility, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  
+  
+  #overlay article {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+  }
+  
+  
+  #overlay button {
+    padding: 16px 24px;
+    background-color: #f06060;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "josefin sans";
+    font-weight: 900;
+    font-size: 16pt;
+  }
+  
+  #overlay button:hover {
+    background-color: #973e3e;
+  }
+  
+  p {
+    font-size: 12pt;
+    font-weight: 500;
+    color: #332e74;
+    line-height: 140%;
+  }
+  
+  .flicker {
+    animation: flicker 1s infinite;
+    font-weight: 200;
+  }
+  
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
+  img {
+    transition: transform 0.5s ease;
+  }
+  
+  img:hover {
+    transform: rotate(15deg);
+  }
+  
+  .colorchange {
+    background-color: #f8dfdb;
+    transition: all 3s;
+  }
+  
+  #letter.no-shadow {
+    box-shadow: none;
+  }
+  
+  /* Style the container for Previous and Next buttons */
+  .navigation-buttons {
+    display: flex;              /* Enables flex layout */
+    justify-content: space-between;  /* Ensures space between the buttons */
+    margin-top: 20px;           /* Space above the buttons */
+    width: 100%;                /* Ensures it spans the full width of its container */
+  }
+  
+  /* Style the buttons inside the navigation container */
+  .navigation-buttons button {
+    padding: 16px 24px;
+    background-color: #f06060;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+    font-size: 16pt;
+    flex: 1;                    /* Makes both buttons take equal width */
+    max-width: 200px;           /* Optionally set a max width to prevent overly stretched buttons */
+    text-align: center;         /* Ensures text inside the button is centered */
+  }
+  
+  /* Add hover effect */
+  .navigation-buttons button:hover {
+    background-color: #973e3e;
+  }
+  
