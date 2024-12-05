@@ -202,3 +202,18 @@ img:hover {
 .navigation-buttons button:hover {
   background-color: #973e3e;
 }
+
+.flicker {
+    animation: flicker 1s infinite;
+    font-weight: 200;
+  }
+  
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
