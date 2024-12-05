@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Final Project Report</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="banner">
+        <div class="bannerimages">
+          <img
+            id="lastname"
+            src="../images/pen.png"
+            alt="pen"
+            style="width: 130px; height: auto"
+          />
+        </div>
+        <div class="headings">
+          <h1>kaitlyn lam</h1>
+          <h2>final project report</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="column">
+          <img
+            id="pen"
+            src="../images/pen.png"
+            alt="pen"
+            style="width: auto; height: 100px"
+          />
+          <article>
+            <h2>Code Review & Report</h2>
+            <h3>
+              Who reviewed your code and what qualifications do they possess
+              that makes their opinions on design valid?
+            </h3>
+            <p>
+              I had my friend review my code—he is a software engineer at
+              Amazon. Not only does he have an undergraduate and Masters
+              education in Computer Science, he is also currently doing frontend
+              work in his team.
+            </p>
+          </article>
+        </div>
+        <div class="column">
+          <article>
+            <h3>What was discussed?</h3>
+            <figure>
+              <img
+                src="../images/error1.png"
+                alt="id"
+                style="width: 950px; height: 325px"
+              />
+              <figcaption>Id instead of class</figcaption>
+            </figure>
+            <p>
+              One of the things he caught within my code was using an id versus
+              a class for one of my buttons. Because the button would only be
+              used once and only has a unique, single purpose, he told me that
+              it would be better if it had a id instead.
+            </p>
+          </article>
+        </div>
+        <div class="column">
+          <article>
+            <figure>
+              <img
+                src="../images/error2.png"
+                alt="navigation"
+                style="width: 950px; height: 325px"
+              />
+              <figcaption>Page Navigation</figcaption>
+            </figure>
+            <p>
+              Another piece of advice he gave me was using a simpler way to
+              navigate through the pages of the content. Originally, I had a
+              function that would hide all the pages and show the current one,
+              but he told me that I could just hide the current page and show
+              the next one, as opposed to hiding all of the pages.
+            </p>
+          </article>
+        </div>
+        <div class="column">
+          <article>
+            <figure>
+              <img
+                src="../images/error3.png"
+                alt="function"
+                style="width: 950px; height: 250px"
+              />
+              <figcaption>Unnecessary function call</figcaption>
+            </figure>
+            <p>
+              Lastly, he caught a mistake where I was unnecessarily calling a
+              function twice, when it only needed to be called once at the very
+              end.
+            </p>
+          </article>
+        </div>
+        <div class="column">
+            <article>
+              <p>
+                In regards to adding a randomize button, I was struggling to get the code to work when I added my word lists to a separate js file. After many attempts to troubleshoot under limited time, he suggested that I just shorten my word lists and include them locally in the script.js. This way, the script.js. file would not be too long while keeping the code functional and working.
+              </p>
+            </article>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <h3>kaitlyn lam</h3>
+      <a
+        href="mailto:&#107;&#121;&#108;&#097;&#109;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;"
+        >kylam@ucdavis.edu</a
+      >
+    </footer>
+  </body>
+</html>

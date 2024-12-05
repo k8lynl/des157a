@@ -30,36 +30,33 @@
     </header>
     <main>
       <form>
-        <!-- Page 0: Customization (Color and Font) -->
-<section class="page" id="customization-page">
-  <h3>Customize Your Mad Lib</h3>
-  
-  <!-- Color Selection for Background -->
-  <label for="color-select">Select Overlay Background Color:</label>
-  <input type="color" id="color-select" value="#ff6347" />
-  
-  <!-- Font Color Selection -->
-  <label for="font-color-select">Select Font Color:</label>
-  <input type="color" id="font-color-select" value="#332e74" />
+        <!-- Customization -->
+        <section class="page" id="customization-page">
+          <h3>Customize Your Mad Lib</h3>
 
-  <!-- Font Selection -->
-  <label for="font-select">Select Font Style:</label>
-  <select id="font-select">
-    <option value="IBM Plex Mono">IBM Plex Mono</option>
-    <option value="Josefin Sans">Josefin Sans</option>
-    <option value="Times New Roman">Times New Roman</option>
-    <option value="Helvetica">Helvetica</option>
-  </select>
+          <!-- Background Color -->
+          <label for="color-select">Choose Paper Color:</label>
+          <input type="color" id="color-select" value="#ff6347" />
 
-  <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <!-- Font Color -->
+          <label for="font-color-select">Choose Font Color:</label>
+          <input type="color" id="font-color-select" value="#332e74" />
 
-  <div class="navigation-buttons">
-    <button type="button" class="next-btn">Next</button>
-  </div>
-</section>
+          <!-- Font -->
+          <label for="font-select">Choose Font:</label>
+          <select id="font-select">
+            <option value="IBM Plex Mono">IBM Plex Mono</option>
+            <option value="Josefin Sans">Josefin Sans</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Helvetica">Helvetica</option>
+          </select>
 
+          <div class="navigation-buttons">
+            <button type="button" class="next-btn">Next</button>
+          </div>
+        </section>
 
-        <!-- Page 1: Adjectives -->
+        <!-- Adjectives -->
         <section class="page" id="adjectives-page">
           <h3>Adjectives</h3>
           <label for="adj1">Adjective</label>
@@ -73,67 +70,66 @@
           <label for="adv">Adverb</label>
           <input type="text" id="adv" required />
 
-
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
           <div class="navigation-buttons">
             <button type="button" class="next-btn">Next</button>
           </div>
         </section>
 
-        <!-- Page 2: Names -->
-        <section class="page" id="names-page" style="display:none;">
+        <!-- Names -->
+        <section class="page" id="names-page" style="display: none">
           <h3>Names</h3>
           <label for="name1">Name</label>
           <input type="text" id="name1" required />
           <label for="name2">Name</label>
           <input type="text" id="name2" required />
 
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
           <div class="navigation-buttons">
             <button type="button" class="prev-btn">Previous</button>
             <button type="button" class="next-btn">Next</button>
           </div>
         </section>
 
-        <!-- Page 3: Numbers and Time -->
-        <section class="page" id="numbers-time-page" style="display:none;">
+        <!-- Numbers and Time -->
+        <section class="page" id="numbers-time-page" style="display: none">
           <h3>Numbers and Time</h3>
           <label for="number">Number</label>
           <input type="text" id="number" required />
-          <label for="time-measurement">Time measurement</label>
+          <label for="time-measurement">Time measurement (e.g. years)</label>
           <input type="text" id="time-measurement" required />
 
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
           <div class="navigation-buttons">
             <button type="button" class="prev-btn">Previous</button>
             <button type="button" class="next-btn">Next</button>
           </div>
         </section>
 
-        <!-- Page 4: Locations -->
-        <section class="page" id="locations-page" style="display:none;">
+        <!-- Locations -->
+        <section class="page" id="locations-page" style="display: none">
           <h3>Locations</h3>
           <label for="location1">Location</label>
           <input type="text" id="location1" required />
           <label for="location2">Location</label>
           <input type="text" id="location2" required />
 
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
           <div class="navigation-buttons">
             <button type="button" class="prev-btn">Previous</button>
             <button type="button" class="next-btn">Next</button>
           </div>
         </section>
 
-        <!-- Page 6: Verbs -->
-        <section class="page" id="verbs-page" style="display:none;">
+        <!-- Verbs -->
+        <section class="page" id="verbs-page" style="display: none">
           <h3>Verbs</h3>
           <label for="verb1">Verb</label>
           <input type="text" id="verb1" required />
           <label for="verb2">Verb</label>
           <input type="text" id="verb2" required />
 
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
 
           <div class="navigation-buttons">
             <button type="button" class="prev-btn">Previous</button>
@@ -141,20 +137,18 @@
           </div>
         </section>
 
-        <!-- Page 7: Nouns -->
-        <section class="page" id="noun-food-page" style="display:none;">
+        <!-- Nouns -->
+        <section class="page" id="noun-food-page" style="display: none">
           <h3>Nouns</h3>
           <label for="noun">Noun ending with "-s"</label>
           <input type="text" id="noun" required />
           <label for="food">Food</label>
           <input type="text" id="food" required />
-          <label for="bodypart1">Body Part</label>
-          <input type="text" id="bodypart1" required />
+          <label for="bodypart">Body Part</label>
+          <input type="text" id="bodypart" required />
 
-          <button type="button" class="autofill-btn">Autofill Inputs</button>
+          <button type="button" class="autofill-btn">Randomize</button>
 
-
-          <div class="navigation-buttons">
           <div class="navigation-buttons">
             <button type="button" class="prev-btn">Previous</button>
             <button type="submit" class="next-btn">Submit</button>
@@ -166,7 +160,7 @@
     <section id="overlay" class="hidden">
       <article>
         <p>Overlay content here</p>
-        <button class="close">Play again</button>
+        <button id="playagain">Play again</button>
       </article>
     </section>
   </body>
